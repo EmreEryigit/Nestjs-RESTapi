@@ -4,8 +4,10 @@ import { AfterInsert, AfterRemove, AfterUpdate, Column, Entity, PrimaryGenerated
 export class User {
     @PrimaryGeneratedColumn()
     id: number;
+
     @Column()
     email: string;
+
     @Column()
     password: string;
 
